@@ -549,7 +549,7 @@ border: 2px solid #fff;
 	height:100%;
 }
 .team-leader:hover .team-leader-shadow{
-	box-shadow:inset  0px 0px 0px 148px rgba(17,17,17,0.80);
+	box-shadow:inset  0px 0px 0px 148px rgba(84,75,160,0.80);
 }
 .team-leader:hover ul{ display:block; opacity:1}
 .team-leader img{
@@ -675,7 +675,7 @@ border: 2px solid #fff;
 	line-height:50px;
 	font-size:25px;
 	color:#fff;
-	background:#222222;
+	background:#5952A2;
 	border-radius:50%;
 	transition:all 0.3s ease-in-out;
 }
