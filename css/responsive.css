@@ -155,8 +155,24 @@
 	
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 376px) and (max-width: 479px) {
 	/****Mobile Portrait 320 ****/
+	.contact-info-box{ margin-left:0px;}
+	.header {
+		padding:146px 40px;
+	}
+	.logo { width: 280px; }
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.c-logo-part ul li{ display:block;}
+	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box img { max-width:100%;}
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
+}
+
+/**** iPhone X ****/
+/* @media screen and (max-width: 375px) , screen and (min-height: 811px) {
+	
 	.contact-info-box{ margin-left:0px;}
 	.header {
 		padding:116px 40px;
@@ -167,4 +183,50 @@
 	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
 	.Portfolio-box img { max-width:100%;}
 	.portfolioContainer{ width:280px !important; margin:0 auto !important }
+} */
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+	and (orientation : portrait) { 
+		.contact-info-box{ margin-left:0px;}
+	.header {
+		padding:182px 40px;
+	}
+	.logo { width: 270px; }
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.c-logo-part ul li{ display:block;}
+	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box img { max-width:100%;}
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
 }
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+	and (orientation : portrait) { 
+		.contact-info-box{ margin-left:0px;}
+	.header {
+		padding:116px 40px;
+	}
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.c-logo-part ul li{ display:block;}
+	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box img { max-width:100%;}
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
+}
+
+/* @media screen and (max-width: 375px) , screen and (max-height: 670px) {
+	.contact-info-box{ margin-left:0px;}
+	.header {
+		padding:116px 40px;
+	}
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.c-logo-part ul li{ display:block;}
+	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box img { max-width:100%;}
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
+} */
