@@ -5,9 +5,9 @@
 @media only screen and (min-width: 1700px) and (max-width: 2000px) {
 	
 	.header{
-		padding-top: 80px;
+		padding-top: 146px;
 		padding-right: 0px;
-		padding-bottom: 82px;
+		padding-bottom: 148px;
 		padding-left: 0px;
 	}
 
@@ -20,8 +20,26 @@
 	}
 }
 
+@media only screen and (min-width: 1650px) and (max-width: 1699px) {
 
-@media only screen and (min-width: 1300px) and (max-width: 1699px) {
+	.header{
+		padding-top: 88px;
+		padding-right: 0px;
+		padding-bottom: 91px;
+		padding-left: 0px;
+	}
+
+	.logo{
+		width: 600px;
+		margin-top: 41px;
+		margin-right: auto;
+		margin-bottom: 120px;
+		margin-left: auto;
+	}
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1649px) {
 	
 	.header{
 		padding-top: 120px;
@@ -124,7 +142,7 @@
 	.main-section.contact{ padding:60px 0 70px}
 	.client-part-haead{ font-size:20px; line-height:30px;}
 	.link{ font-size:14px; padding:10px 25px;}
-	.logo{ width:175px;}
+	.logo{ width:260px;}
 	.main-section.contact{ background-size:contain;}
 	.Portfolio-nav li a{ padding:5px 16px;}
 	.Portfolio-nav li{ display:block;}
@@ -140,12 +158,13 @@
 @media only screen and (max-width: 479px) {
 	/****Mobile Portrait 320 ****/
 	.contact-info-box{ margin-left:0px;}
-	.header{ padding:60px 40px;}
+	.header {
+		padding:116px 40px;
+	}
 	.social-link{ margin-left:0px;}
 	.form{ margin:0}
 	.c-logo-part ul li{ display:block;}
 	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
 	.Portfolio-box img { max-width:100%;}
-	.portfolioContainer{ width:280px !important; margin:0 auto !important } 
-	
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
 }
