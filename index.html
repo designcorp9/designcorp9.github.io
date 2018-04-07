@@ -38,7 +38,7 @@
             <figure class="logo animated fadeInDown delay-07s">
                 <a href="#"><img src="img/logo.png" alt=""></a>
             </figure>
-            <h1 class="animated fadeInDown delay-07s">YENİ NESİL, FREELANCE TASARIM OFİSİ</h1>
+            <!-- <h1 class="animated fadeInDown delay-07s">YENİ NESİL, FREELANCE TASARIM OFİSİ</h1> -->
             <ul class="we-create animated fadeInUp delay-1s">
                 <li style="display: none;">HOŞGELDİNİZ</li>
             </ul>
@@ -60,7 +60,10 @@
                 <li><a href="#team">BİZ KİMİZ?</a></li>
                 <li><a href="#contact">İLETİŞİM</a></li>
             </ul>
-            <a class="res-nav_click" href="#"><img src="img/navbar.png"></a>
+            <a class="res-nav_click" href="#">
+              <img id="nav-img" src="img/navbar.png">
+              <img id="nav-img2" style="display: none;" id="nav-img" src="img/navbar2.png">
+            </a>
         </div>
     </nav>
     <!--main-nav-end-->
@@ -117,6 +120,15 @@
                         </div>
                         <div class="service-list-col2">
                             <h3>sosyal medya</h3>
+                            <p>Facebook, Instagram, Twitter ve kurumuzunu temsil etmek istediğiniz tüm sosyal medya mecralarında kullanmak üzere video, fotoğraf, animasyon, kampanya, çekiliş gibi içerikler üretiyor; reklam stratejileri geliştirip kurumunuzun doğru şekilde temsil edildiğinizden emin olmanızı sağlıyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="service-list">
+                        <div class="service-list-col1">
+                            <i class="fa-users"></i>
+                        </div>
+                        <div class="service-list-col2">
+                            <h3>mimarlık</h3>
                             <p>Facebook, Instagram, Twitter ve kurumuzunu temsil etmek istediğiniz tüm sosyal medya mecralarında kullanmak üzere video, fotoğraf, animasyon, kampanya, çekiliş gibi içerikler üretiyor; reklam stratejileri geliştirip kurumunuzun doğru şekilde temsil edildiğinizden emin olmanızı sağlıyoruz.</p>
                         </div>
                     </div>
@@ -361,7 +373,7 @@
                 <div class="col-md-6 col-md-offset-3 wow fadeInLeft">
                     <div class="contact-info-box address clearfix">
                         <h3><i class=" icon-map-marker"></i>Adres:</h3>
-                        <span>1234 Sokak, ABC Caddesi<br>Bostanlı,Karşıyaka, İZMİR</span>
+                        <span>2016/1 Sokak, No:22/A<br>Bostanlı,Karşıyaka, İZMİR</span>
                     </div>
                     <div style="display:none" class="contact-info-box phone clearfix">
                         <h3><i class="fa-phone"></i>Phone:</h3>
@@ -376,17 +388,18 @@
                         <span><strong>Pazartesi - Cuma:</strong> 09:00 - 17:00<br><strong>Cumartesi - Pazar:</strong> Etkinlik ve çekimler için haftasonları da hizmet vermekteyiz.</span>
                     </div>
                     <ul class="social-link">
-                        <li class="twitter"><a href="https://twitter.com/9emedya" target="_blank"><i class="fa-twitter"></i></a></li>
-                        <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fa-facebook"></i></a></li>
-                        <li style="display: none;" class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
-                        <li style="display: none;" class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
-                        <li class="dribbble"><a href="https://www.instagram.com/9emedya/" target="_blank"><i class="fa-instagram"></i></a></li>
+                      <div class="row">
+                        <div class="col-md-4 col-md-offset-4" style="padding-left: 0;">
+                          <li class="twitter"><a href="https://behance.com/9emedya" target="_blank"><i class="fa-behance"></i></a></li>
+                          <li class="dribbble"><a href="https://www.instagram.com/9emedya/" target="_blank"><i class="fa-instagram"></i></a></li>
+                        </div>
+                      </div>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2213.8623440510987!2d27.157767372938704!3d38.305583440242685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2str!4v1506605222433" width=100% height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.260430525953!2d27.100598814978504!3d38.45854847964068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9bffd9f7071%3A0x43fb855f80ee29c5!2zQm9zdGFubMSxIE1haGFsbGVzaSwgMjAxNi8xLiBTay4sIDM1NTkwIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1sen!2str!4v1523132043789" width=100% height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -404,28 +417,35 @@
 
     <script type="text/javascript">
         $(document).ready(function (e) {
+            var isNavigationClosed = true;
+            function changeImage() {
+              isNavigationClosed = !isNavigationClosed;
+              var navImg = $('#nav-img');
+              var navImg2 = $('#nav-img2');
+              if(isNavigationClosed) {
+                navImg2.hide();
+                navImg.show();
+              }
+              else {
+                navImg.hide();
+                navImg2.show();
+              }
+            }
+
             $('#test').scrollToFixed();
             $('.res-nav_click').click(function () {
                 $('.main-nav').slideToggle();
+                changeImage();
                 return false
 
             });
 
+            $('.main-nav li a').click(function () {
+                changeImage();
+            });
+
         });
-    </script>
 
-    <script>
-        wow = new WOW(
-            {
-                animateClass: 'animated',
-                offset: 100
-            }
-        );
-        wow.init();
-    </script>
-
-
-    <script type="text/javascript">
         $(window).load(function () {
 
             $('.main-nav li a, .servicelink').bind('click', function (event) {
@@ -445,7 +465,20 @@
                 }
                 event.preventDefault();
             });
-        })
+        });
+
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100
+            }
+        );
+        wow.init();
+    </script>
+
+
+    <script type="text/javascript">
+
     </script>
 
     <script type="text/javascript">
