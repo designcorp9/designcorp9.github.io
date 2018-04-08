@@ -515,8 +515,11 @@ border: 2px solid #fff;
 	margin-right: 15%;
 	/* height: 490px; */
 	overflow: hidden;
-	text-align: center;
+	text-align: justify;
 	float: left;
+}
+.team-leader-box-align{
+  text-align: center !important;
 }
 .team-leader-box span{
 	margin-bottom:24px;
