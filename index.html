@@ -18,6 +18,7 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
 
     <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
 
@@ -209,37 +210,37 @@
         </div>
         <div class="portfolioContainer wow fadeInUp delay-04s">
             <div class=" Portfolio-box mimari">
-                <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>
+                <a class="thumbnails" data-id="1"><img src="img/Portfolio-pic1.jpg" alt=""></a>
                 <h3>Foto Album</h3>
                 <p>Print Design</p>
             </div>
             <div class=" Portfolio-box printdesign">
-                <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>
+                <a class="thumbnails" data-id="2"><img src="img/Portfolio-pic1.jpg" alt=""></a>
                 <h3>Foto Album</h3>
                 <p>Print Design</p>
             </div>
             <div class="Portfolio-box webdesign">
-                <a href="#"><img src="img/Portfolio-pic2.jpg" alt=""></a>
+                <a class="thumbnails" data-id="3"><img src="img/Portfolio-pic2.jpg" alt=""></a>
                 <h3>Luca Theme</h3>
                 <p>Web Design</p>
             </div>
             <div class=" Portfolio-box branding">
-                <a href="#"><img src="img/Portfolio-pic3.jpg" alt=""></a>
+                <a class="thumbnails" data-id="4"><img src="img/Portfolio-pic3.jpg" alt=""></a>
                 <h3>Uni Sans</h3>
                 <p>Branding</p>
             </div>
             <div class=" Portfolio-box photography">
-                <a href="#"><img src="img/Portfolio-pic4.jpg" alt=""></a>
+                <a class="thumbnails" data-id="5"><img src="img/Portfolio-pic4.jpg" alt=""></a>
                 <h3>Vinyl Record</h3>
                 <p>Photography</p>
             </div>
             <div class=" Portfolio-box branding">
-                <a href="#"><img src="img/Portfolio-pic5.jpg" alt=""></a>
+                <a class="thumbnails" data-id="6"><img src="img/Portfolio-pic5.jpg" alt=""></a>
                 <h3>Hipster</h3>
                 <p>Branding</p>
             </div>
             <div class=" Portfolio-box photography">
-                <a href="#"><img src="img/Portfolio-pic6.jpg" alt=""></a>
+                <a class="thumbnails" data-id="7"><img src="img/Portfolio-pic6.jpg" alt=""></a>
                 <h3>Windmills</h3>
                 <p>Photography</p>
             </div>
@@ -288,18 +289,6 @@
         </div>
     </section>
     <!--main-section client-part-end-->
-
-    <!-- <div class="c-logo-part">
-        <div class="container">
-            <ul>
-                <li><a href="#"><img src="img/c-liogo1.png" alt=""></a></li>
-                <li><a href="#"><img src="img/c-liogo2.png" alt=""></a></li>
-                <li><a href="#"><img src="img/c-liogo3.png" alt=""></a></li>
-                <li><a href="#"><img src="img/c-liogo4.png" alt=""></a></li>
-                <li><a href="#"><img src="img/c-liogo5.png" alt=""></a></li>
-            </ul>
-        </div>
-    </div> -->
 
     <!--c-logo-part-end-->
     <section class="main-section team" id="team">
@@ -414,6 +403,20 @@
         </div>
     </footer>
 
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <img style="display: none;" id="image1" src="img/Portfolio-pic1.jpg" alt="">
+                <img style="display: none;" id="image2" src="img/Portfolio-pic1.jpg" alt="">
+                <img style="display: none;" id="image3" src="img/Portfolio-pic2.jpg" alt="">
+                <img style="display: none;" id="image4" src="img/Portfolio-pic3.jpg" alt="">
+                <img style="display: none;" id="image5" src="img/Portfolio-pic4.jpg" alt="">
+                <img style="display: none;" id="image6" src="img/Portfolio-pic5.jpg" alt="">
+                <img style="display: none;" id="image7" src="img/Portfolio-pic6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
 
     <script type="text/javascript">
         $(document).ready(function (e) {
@@ -525,6 +528,8 @@
 
         });
     </script>
+
+    <script src="js/site.js"></script>
 
 </body>
 
