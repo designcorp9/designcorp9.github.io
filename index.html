@@ -218,7 +218,7 @@
                 <p>Konsept Kurumsal Kimlik Tasarımı</p>
             </div>
             <div class=" Portfolio-box kurumsal">
-                <a class="thumbnails" data-id="1"><img src="img/katalog-thb/1-kurumsalkimlik/robi_result.png" alt=""></a>
+                <a class="thumbnails" data-id="2"><img src="img/katalog-thb/1-kurumsalkimlik/robi_result.png" alt=""></a>
                 <h3>ROBİ TEKNOLOJİK EĞİTİM MERKEZİ</h3>
                 <p>Konsept Kurumsal Kimlik Tasarımı</p>
             </div>
@@ -629,14 +629,7 @@
 
     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="modal">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <img style="display: none;" id="image1" src="img/Portfolio-pic1.jpg" alt="">
-                <img style="display: none;" id="image2" src="img/Portfolio-pic1.jpg" alt="">
-                <img style="display: none;" id="image3" src="img/Portfolio-pic2.jpg" alt="">
-                <img style="display: none;" id="image4" src="img/Portfolio-pic3.jpg" alt="">
-                <img style="display: none;" id="image5" src="img/Portfolio-pic4.jpg" alt="">
-                <img style="display: none;" id="image6" src="img/Portfolio-pic5.jpg" alt="">
-                <img style="display: none;" id="image7" src="img/Portfolio-pic6.jpg" alt="">
+            <div class="modal-content" id="model-section">
             </div>
         </div>
     </div>
@@ -681,12 +674,7 @@
                 $('html, body').stop().animate({
                     scrollTop: $($anchor.attr('href')).offset().top - 102
                 }, 1500, 'easeInOutExpo');
-                /*
-                if you don't want to use the easing effects:
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1000);
-                */
+
                 if ($(window).width() < 768) {
                     $('.main-nav').hide();
                 }

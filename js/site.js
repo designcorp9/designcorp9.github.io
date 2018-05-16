@@ -1,29 +1,31 @@
 $(window).load(function () {
 
-  let image1 = $('#image1');
-  let image2 = $('#image2');
-  let image3 = $('#image3');
-  let image4 = $('#image4');
-  let image5 = $('#image5');
-  let image6 = $('#image6');
-  let image7 = $('#image7');
+  let image1 = 'http://i66.tinypic.com/2nw1gck.png';
+  let image2 = 'http://i63.tinypic.com/35jm73c.jpg';
+  let image3 = 'http://i66.tinypic.com/2nw1gck.png';
+
+  let images = [
+    image1,
+    image2,
+    image3
+  ];
+  let modelSection = document.getElementById('model-section');
 
   $('.thumbnails').bind('click', function (event) {
     let id = $(this).attr('data-id');
 
-    let image = $('#image' + id);
-    image.show();
+    let imageSouce = images[id-1];
+
+    let img = document.createElement('img');
+    img.src = imageSouce;
+
+    modelSection.appendChild(img);
+
     $('#modal').modal('show');
   });
 
   $('#modal').on('hidden.bs.modal', function () {
-    image1.hide();
-    image2.hide();
-    image3.hide();
-    image4.hide();
-    image5.hide();
-    image6.hide();
-    image7.hide();
+    modelSection.removeChild(modelSection.lastChild);
   });
 
 });
