@@ -24,8 +24,16 @@ $(window).load(function () {
     $('#modal').modal('show');
   });
 
+  // $('#load-more').bind('click', function (event) {
+  //   $('#additional-image-section').show();
+  // });
+
   $('#modal').on('hidden.bs.modal', function () {
     modelSection.removeChild(modelSection.lastChild);
   });
+
+  setTimeout(function(){
+    $('#default-filter').trigger('click');
+  }, 1000);
 
 });
