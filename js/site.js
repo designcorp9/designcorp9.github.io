@@ -1,6 +1,6 @@
 $(window).load(function () {
 
-  let image1 = 'http://imgbox.com/stvfxYca';
+  let image1 = 'https://images2.imgbox.com/18/c9/stvfxYca_o.png';
   let image2 = 'http://i63.tinypic.com/35jm73c.jpg';
   let image3 = 'http://i66.tinypic.com/2nw1gck.png';
 
