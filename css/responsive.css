@@ -158,6 +158,21 @@
 
 }
 
+@media only screen and (min-width: 280px) and (max-width: 375px) {
+	/****Mobile Portrait 320 ****/
+	.contact-info-box{ margin-left:0px;}
+	.header {
+		padding:146px 40px;
+	}
+	.logo { width: 280px; }
+	.social-link{ margin-left:0px;}
+	.form{ margin:0}
+	.c-logo-part ul li{ display:block;}
+	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+	.Portfolio-box img { max-width:100%;}
+	.portfolioContainer{ width:280px !important; margin:0 auto !important }
+}
+
 @media only screen and (min-width: 376px) and (max-width: 479px) {
 	/****Mobile Portrait 320 ****/
 	.contact-info-box{ margin-left:0px;}
