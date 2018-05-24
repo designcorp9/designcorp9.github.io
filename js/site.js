@@ -53,6 +53,7 @@ $(window).load(function () {
   let image51 = 'https://images2.imgbox.com/ef/a2/i1VgCzId_o.png';
   let image52 = 'https://images2.imgbox.com/f4/d7/8umaOSte_o.png';
   let image53 = 'https://images2.imgbox.com/0c/be/S47ISdsm_o.png';
+  let image54 = 'https://images2.imgbox.com/5c/da/7Mlosxfw_o.png';
 
   let images = [
     image1,
@@ -107,7 +108,8 @@ $(window).load(function () {
     image50,
     image51,
     image52,
-    image53
+    image53,
+    image54
   ];
   let modelSection = document.getElementById('model-section');
 
