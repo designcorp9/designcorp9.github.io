@@ -54,6 +54,11 @@ $(window).load(function () {
   let image52 = 'https://images2.imgbox.com/f4/d7/8umaOSte_o.png';
   let image53 = 'https://images2.imgbox.com/0c/be/S47ISdsm_o.png';
   let image54 = 'https://images2.imgbox.com/5c/da/7Mlosxfw_o.png';
+  let image55 = 'https://images2.imgbox.com/0d/cd/Kh5vPkZi_o.png';
+  let image56 = 'https://images2.imgbox.com/1a/47/v9OC3yb3_o.png';
+  let image57 = 'https://images2.imgbox.com/fd/67/2oh7SuO2_o.png';
+  let image58 = 'https://images2.imgbox.com/de/72/sX4193FF_o.jpg';
+  let image59 = 'https://images2.imgbox.com/2f/4e/5G4mKNYd_o.jpg';
 
   let images = [
     image1,
@@ -109,7 +114,12 @@ $(window).load(function () {
     image51,
     image52,
     image53,
-    image54
+    image54,
+    image55,
+    image56,
+    image57,
+    image58,
+    image59
   ];
   let modelSection = document.getElementById('model-section');
 
