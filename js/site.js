@@ -139,16 +139,16 @@ $(window).load(function () {
 
   // let modelVideoSection = document.getElementById('model-video-section');
 
-  $('#embed-video').bind('click', function (event) {
-    $('#video-model').modal('show');
+  $('#animation-video').bind('click', function (event) {
+    $('#animation-modal').modal('show');
   });
 
-  $('#video-model').on('hidden.bs.modal', function () {
+  $('#animation-modal').on('hidden.bs.modal', function () {
     $('.resp-iframe').each(function(){
         var el_src = $(this).attr("src");
         $(this).attr("src", el_src);
     });  
-  })
+  });
 
   // $('#load-more').bind('click', function (event) {
   //   $('#additional-image-section').show();
