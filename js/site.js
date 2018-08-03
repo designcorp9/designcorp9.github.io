@@ -121,6 +121,7 @@ $(window).load(function () {
     image58,
     image59
   ];
+
   let modelSection = document.getElementById('model-section');
 
   $('.thumbnails').bind('click', function (event) {
@@ -135,6 +136,19 @@ $(window).load(function () {
 
     $('#modal').modal('show');
   });
+
+  // let modelVideoSection = document.getElementById('model-video-section');
+
+  $('#embed-video').bind('click', function (event) {
+    $('#video-model').modal('show');
+  });
+
+  $('#video-model').on('hidden.bs.modal', function () {
+    $('.resp-iframe').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src", el_src);
+    });  
+  })
 
   // $('#load-more').bind('click', function (event) {
   //   $('#additional-image-section').show();
