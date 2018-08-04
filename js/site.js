@@ -139,11 +139,22 @@ $(window).load(function () {
 
   // let modelVideoSection = document.getElementById('model-video-section');
 
-  $('#animation-video').bind('click', function (event) {
-    $('#animation-modal').modal('show');
+  $('#cadde-video').bind('click', function (event) {
+    $('#cadde-video-modal').modal('show');
   });
 
-  $('#animation-modal').on('hidden.bs.modal', function () {
+  $('#cadde-video-modal').on('hidden.bs.modal', function () {
+    $('.resp-iframe').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src", el_src);
+    });  
+  });
+
+  $('#trend-video').bind('click', function (event) {
+    $('#trend-video-modal').modal('show');
+  });
+
+  $('#trend-video-modal').on('hidden.bs.modal', function () {
     $('.resp-iframe').each(function(){
         var el_src = $(this).attr("src");
         $(this).attr("src", el_src);
