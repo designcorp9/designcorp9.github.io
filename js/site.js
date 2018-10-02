@@ -143,6 +143,17 @@ $(window).load(function () {
 
   // let modelVideoSection = document.getElementById('model-video-section');
 
+  $('#yukselis-video').bind('click', function (event) {
+    $('#yukselis-video-modal').modal('show');
+  });
+
+  $('#yukselis-video-modal').on('hidden.bs.modal', function () {
+    $('.resp-iframe').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src", el_src);
+    });  
+  });
+
   $('#cadde-video').bind('click', function (event) {
     $('#cadde-video-modal').modal('show');
   });
