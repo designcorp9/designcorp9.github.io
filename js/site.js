@@ -149,6 +149,28 @@ $(window).load(function () {
 
   // let modelVideoSection = document.getElementById('model-video-section');
 
+  $('#egeriva-video').bind('click', function (event) {
+    $('#egeriva-video-modal').modal('show');
+  });
+
+  $('#egeriva-video-modal').on('hidden.bs.modal', function () {
+    $('.resp-iframe').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src", el_src);
+    });  
+  });
+
+  $('#urlavilla-video').bind('click', function (event) {
+    $('#urlavilla-video-modal').modal('show');
+  });
+
+  $('#urlavilla-video-modal').on('hidden.bs.modal', function () {
+    $('.resp-iframe').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src", el_src);
+    });  
+  });
+
   $('#yukselis-video').bind('click', function (event) {
     $('#yukselis-video-modal').modal('show');
   });
