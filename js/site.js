@@ -64,6 +64,24 @@ $(window).load(function () {
   let image62 = 'https://images2.imgbox.com/6a/b5/IGakU5lU_o.png';
   let image63 = 'https://images2.imgbox.com/7e/a7/jmhBeQJf_o.png';
   let image64 = 'https://images2.imgbox.com/d7/f1/r0zwXcat_o.jpg';
+  let image65 = 'https://images2.imgbox.com/de/fe/zBacYjJS_o.jpg';
+  let image66 = 'https://images2.imgbox.com/51/7e/4ffyK9e1_o.jpg';
+  let image67 = 'https://images2.imgbox.com/64/af/H6QNhU3P_o.jpg';
+  let image68 = 'https://images2.imgbox.com/1d/88/LnGIJfiU_o.jpg';
+  let image69 = 'https://images2.imgbox.com/58/0f/tNKMCLiu_o.jpg';
+  let image70 = 'https://images2.imgbox.com/8e/ec/scUZerA2_o.jpg';
+  let image71 = 'https://images2.imgbox.com/f8/75/VvfDX0tS_o.jpg';
+  let image72 = 'https://images2.imgbox.com/3d/b1/nbDBFzDo_o.jpg';
+  let image73 = 'https://images2.imgbox.com/bd/6b/yY0OUHLE_o.jpg';
+  let image74 = 'https://www.instagram.com/p/B4AGQDtpA6e/?igshid=19c8khs8ogktu';
+  let image75 = 'https://www.instagram.com/p/B4hg-ftjfTc/?igshid=1wxuxwnuwmda9';
+  let image76 = 'https://images2.imgbox.com/d6/ff/bCx8PwW1_o.jpg';
+  let image77 = 'https://images2.imgbox.com/ef/01/tQIhrDfP_o.jpg';
+  let image78 = 'https://images2.imgbox.com/3a/5b/KB2cdsf6_o.png';
+  let image79 = 'https://images2.imgbox.com/8e/13/iSdMRMBH_o.png';
+  let image80 = 'https://images2.imgbox.com/82/8e/OFi3nMJv_o.png';
+  let image81 = 'https://images2.imgbox.com/6f/65/g2Jbgag6_o.png';
+  let image82 = 'https://images2.imgbox.com/bc/5c/vHsaNIel_o.png';
 
   let images = [
     image1,
@@ -129,7 +147,25 @@ $(window).load(function () {
     image61,
     image62,
     image63,
-    image64
+    image64,
+    image65,
+    image66,
+    image67,
+    image68,
+    image69,
+    image70,
+    image71,
+    image72,
+    image73,
+    image74,
+    image75,
+    image76,
+    image77,
+    image78,
+    image79,
+    image80,
+    image81,
+    image82
   ];
 
   let modelSection = document.getElementById('model-section');
